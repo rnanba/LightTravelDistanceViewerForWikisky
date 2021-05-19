@@ -33,7 +33,7 @@ window.addEventListener('message', (ev) => {
     if (oku > 0) {
       ltd_ja += oku + '億'
     }
-    const man = Math.floor((ltd_oku_kounen - oku) * 1000)
+    const man = Math.round((ltd_oku_kounen - oku) * 100) * 100
     if (man > 0) {
       ltd_ja += man + '万'
     }
