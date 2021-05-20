@@ -29,6 +29,8 @@ Greasemonkey を有効にした状態で、ブラウザから .user.js ファイ
 4. 続けて二つのタブが開いて自動的に閉じます。
 5. 2 の画面の銀河の名前の下に距離が表示されます。
 
+距離は100万光年までの精度で表示しますが、赤方偏移のみからの推定値なので実際にはそこまでの精度はないと思ってください。
+
 ## 仕組み
 
 WIKISKY.ORG の天体情報画面からPGC番号を読み取って、当該PGC天体の視線速度(v)を HyperLeda のデータベースから取得し、そこから計算した赤方偏移(z)を Ned Wright's Javascript Cosmology Calculator に与えて light travel time を計算し、それを Gly (Giga light-year) および 光年 単位で表示します。
